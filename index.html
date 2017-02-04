@@ -12,13 +12,18 @@
 		width: 241px;
 		height: 374px;
 	}
+	.movimientobtn{
+		display: none;
+	}
 </style>
 </head>
 
 <body>
 	<div id="megaman"></div>
-	<button onClick="movetoleft();">Derecha -&gt;</button>
-	<button onClick="movetoright();">&lt;- Izquierda</button>
+	<button id="iniciarbtn" onClick="start();">Iniciar</button>
+	<button class="movimientobtn" onClick="movetoleft();">Derecha -&gt;</button>
+	<button class="movimientobtn" onClick="movetoright();">&lt;- Izquierda</button>
 	<button onClick="stop();">Parar</button>
+	<audio style="display: none;" id="sonido" src="audio/SANIC.mp3" preload="auto"></audio>
 </body>
 </html>
